@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renma Joy A. Taneo — Portfolio</title>
+<meta name="description" content="Renma Joy A. Taneo — Computer Science student & web developer based in Cavite, Philippines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV — file tabs ============ -->
+<header class="tabbar" id="tabbar">
+  <div class="tabbar__dots" aria-hidden="true">
+    <span class="dot dot--red"></span>
+    <span class="dot dot--yellow"></span>
+    <span class="dot dot--green"></span>
+  </div>
+  <nav class="tabs" aria-label="Primary">
+    <a href="#about" class="tab is-active">About</a>
+    <a href="#experience" class="tab">Experience</a>
+    <a href="#projects" class="tab">Projects</a>
+    <a href="#education" class="tab">Education</a>
+    <a href="#skills" class="tab">Skills</a>
+    <a href="#contact" class="tab">Contact</a>
+  </nav>
+  <button class="tabbar__menu" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="about">
+    <div class="editor">
+      <div class="editor__gutter" aria-hidden="true">
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+      </div>
+      <pre class="editor__code"><code><span class="c-key"></span> <span class="c-var">renma</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Renma Joy A. Taneo"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Computer Science Student"</span>,
+  <span class="c-prop">focus</span>: <span class="c-str">"Web Development, Data Encoding"</span>,
+  <span class="c-prop">location</span>: <span class="c-str">"Maragondon, Cavite, PH"</span>,
+  <span class="c-prop">status</span>: <span class="c-str">"Open to any opportunities"</span><span class="cursor">&#8203;</span>
+};
+    </div>
+
+    <div class="hero__side">
+      <div class="avatar-frame" id="avatarFrame">
+        <div class="avatar-frame__window">
+          <div class="project-card__dots"><span></span><span></span><span></span></div>
+        </div>
+        <img
+          src="profile.jpg"
+          alt="Portrait of Renma Joy A. Taneo"
+          class="avatar-frame__img"
+          onerror="document.getElementById('avatarFrame').style.display='none'"
+        >
+      </div>
+
+      <p class="eyebrow">Hello! I'm</p>
+      <h1 class="hero__name">Renma Joy A. Taneo</h1>
+      <p class="hero__tagline">A Computer Science graduate in  Emilio Aguinaldo College-Cavite, who builds things for the web — from tourism sites to full ordering systems — and is currently looking for a work to build something real and learn then use her skills.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projects">View projects</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/renmaaa" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/renma-taneo" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:renmataneo@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <h2 class="section__title">Where I've worked</h2>
+
+    <div class="card card--terminal">
+      <div class="card__head">
+        <div>
+          <h3 class="card__title">Operations Intern</h3>
+          <p class="card__org">Hyundai Alabang Inc. — Silang Branch</p>
+        </div>
+        <div class="card__meta">
+          <span class="tag tag--date">Jun 2025 – Aug 2025</span>
+          <span class="card__place">Silang, Cavite</span>
+        </div>
+      </div>
+      <ul class="terminal-list">
+        <li><span class="prompt">$</span> Monitored, reconciled, and updated inventory records to prevent discrepancies and maintain accurate stock levels.</li>
+        <li><span class="prompt">$</span> Prepared and presented daily, weekly, and monthly reports on sales and operations to support management decisions.</li>
+        <li><span class="prompt">$</span> Maintained sensitive company data across internal systems, ensuring accuracy, confidentiality, and timeliness.</li>
+        <li><span class="prompt">$</span> Processed financial and non-financial transactions while providing customer service and keeping day-to-day operations running smoothly.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <h2 class="section__title">Things I've built</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-card__window">
+          <div class="project-card__dots"><span></span><span></span><span></span></div>
+          <span class="project-card__filename"><a href="https://renmaaa.github.io/KAZAKHSTAN_WEB/" target="_blank" rel="noopener noreferrer">Kazakhstan Tourism Website</a></span>
+        </div>
+        <div class="project-card__body">
+          <h3>Kazakhstan Tourism Website</h3>
+          <p>A front-end tourism site showcasing Kazakhstan's attractions, built to demonstrate structured layout and responsive front-end fundamentals.</p>
+          <div class="stack">
+            <span class="stack__tag">HTML</span>
+            <span class="stack__tag">Bootstrap</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__window">
+          <div class="project-card__dots"><span></span><span></span><span></span></div>
+          <span class="project-card__filename"><a href="https://renmaaa.github.io/STEAK_RESTAURANT/" target="_blank" rel="noopener noreferrer">Steakhouse Restaurant</a></span>
+        </div>
+        <div class="project-card__body">
+          <h3>Steakhouse Ordering Interface</h3>
+          <p>A dynamic menu and ordering interface designed for a fictional steak restaurant, focused on clear navigation and an intuitive ordering flow.</p>
+          <div class="stack">
+            <span class="stack__tag">HTML</span>
+            <span class="stack__tag">CSS</span>
+            <span class="stack__tag">JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__window">
+          <div class="project-card__dots"><span></span><span></span><span></span></div>
+          <span class="project-card__filename"><a href="https://renmaaa.github.io/TAKOYAKI_RESTAURANT/" target="_blank" rel="noopener noreferrer">Takoyaki Restaurant</a></span>
+        </div>
+        <div class="project-card__body">
+          <h3>Takoyaki Restaurant</h3>
+          <p>A responsive website for a fictional takoyaki restaurant, showcasing their menu and location.</p>
+          <div class="stack">
+            <span class="stack__tag">HTML</span>
+            <span class="stack__tag">CSS</span>
+            <span class="stack__tag">JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__window">
+          <div class="project-card__dots"><span></span><span></span><span></span></div>
+          <span class="project-card__filename"><a href="https://github.com/renmaaa/GDOCS_CLONE" target="_blank" rel="noopener noreferrer">Collaborative Document Editor</a></span>
+        </div>
+        <div class="project-card__body">
+          <h3>Collaborative Document Editor</h3>
+          <p>A Google Docs-style collaborative editing platform, simulating shared, real-time document editing between multiple users.</p>
+          <div class="stack">
+            <span class="stack__tag">PHP</span>
+            <span class="stack__tag">JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <h2 class="section__title">Academic background</h2>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="card__head">
+            <div>
+              <h3 class="card__title">BS in Computer Science</h3>
+              <p class="card__org">Emilio Aguinaldo College — Cavite Campus</p>
+            </div>
+            <div class="card__meta">
+              <span class="tag tag--date">Aug 2022 – Jul 2026</span>
+              <span class="card__place">Dasmariñas, Cavite</span>
+            </div>
+          </div>
+          <p class="timeline__detail"><strong>Relevant coursework:</strong> Data Structures, Algorithms, Operating Systems, Databases, Computer Networks, Web Development.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="card__head">
+            <div>
+              <h3 class="card__title">Senior High School — HUMSS Strand</h3>
+              <p class="card__org">Bucal National Integrated School <span class="honor">With Honors</span></p>
+            </div>
+            <div class="card__meta">
+              <span class="tag tag--date">2019 – 2021</span>
+              <span class="card__place">Maragondon, Cavite</span>
+            </div>
+          </div>
+          <p class="timeline__detail">Research Leader — "Insights of the Students about the Aids and Opportunities to be Offered by G12 Teachers on Limited Face-to-Face Class in Work Immersion Program."</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="card__head">
+            <div>
+              <h3 class="card__title">Junior High School</h3>
+              <p class="card__org">Bucal National Integrated School <span class="honor">With Honors</span></p>
+            </div>
+            <div class="card__meta">
+              <span class="tag tag--date">2016 – 2019</span>
+              <span class="card__place">Maragondon, Cavite</span>
+            </div>
+          </div>
+          <p class="timeline__detail">Consistent Honor Roll Student.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="card__head">
+            <div>
+              <h3 class="card__title">Elementary Graduate</h3>
+              <p class="card__org">Mabato Elementary School <span class="honor">With Honors</span></p>
+            </div>
+            <div class="card__meta">
+              <span class="tag tag--date">2015</span>
+              <span class="card__place">Maragondon, Cavite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEADERSHIP ============ -->
+  <section class="section" id="leadership">
+    <h2 class="section__title">Beyond the classroom</h2>
+
+    <div class="leadership-grid">
+      <div class="card">
+        <div class="card__head">
+          <div>
+            <h3 class="card__title">Emilio Aguinaldo College — Cavite</h3>
+            <p class="card__org">Student</p>
+          </div>
+          <span class="tag tag--date">2022 – 2026</span>
+        </div>
+        <ul class="plain-list">
+          <li>Student Representative, First Year College</li>
+          <li>Elected Treasurer, Second Year College</li>
+          <li>NSTP Immersion Leader — "Resi-art: Creativity through Art"</li>
+          <li>Research Leader, Purposive Communication — perception of college professors on campus security and surveillance</li>
+          <li>Research Leader, Pagbasa at Pagsulat — student use of ChatGPT among CS majors</li>
+          <li>Member, Junior Philippine Computer Science Society</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card__head">
+          <div>
+            <h3 class="card__title">Bucal National Integrated School</h3>
+            <p class="card__org">Student</p>
+          </div>
+          <span class="tag tag--date">2016 – 2022</span>
+        </div>
+        <ul class="plain-list">
+          <li>Student Representative of the class</li>
+          <li>Research Leader — "Insights of the Students about the Aids and Opportunities to be Offered by G12 Teachers on Limited Face-to-Face Class in Work Immersion Program"</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card__head">
+          <div>
+            <h3 class="card__title">Mabato Elementary School</h3>
+            <p class="card__org">Student</p>
+          </div>
+          <span class="tag tag--date">2015</span>
+        </div>
+        <ul class="plain-list">
+          <li>Declamation Contest, School Representative</li>
+          <li>Graduated With Honors</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <h2 class="section__title">What I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-block">
+        <h3 class="skill-block__title"><span class="c-key"></span> programming = [</h3>
+        <div class="pill-row">
+          <span class="pill">C++</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Python</span>
+          <span class="pill">PHP</span>
+        </div>
+        <h3 class="skill-block__title skill-block__title--close">]</h3>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title"><span class="c-key"></span> webDev = [</h3>
+        <div class="pill-row">
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">Tailwind</span>
+          <span class="pill">Bootstrap</span>
+        </div>
+        <h3 class="skill-block__title skill-block__title--close">]</h3>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title"><span class="c-key"></span> tools = [</h3>
+        <div class="pill-row">
+          <span class="pill">Git</span>
+          <span class="pill">Cisco Packet Tracer</span>
+          <span class="pill">Logisim</span>
+          <span class="pill">Microsoft Office</span>
+          <span class="pill">Canva</span>
+        </div>
+        <h3 class="skill-block__title skill-block__title--close">]</h3>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title"><span class="c-key"></span> certifications = [</h3>
+        <div class="pill-row">
+          <span class="pill">Introduction to Java — DataCamp, Apr 2026</span>
+          <span class="pill">Intermediate Java — DataCamp, May 2026</span>
+        </div>
+        <h3 class="skill-block__title skill-block__title--close">]</h3>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title"><span class="c-key"></span> languages = [</h3>
+        <div class="pill-row">
+          <span class="pill">English</span>
+          <span class="pill">Tagalog</span>
+        </div>
+        <h3 class="skill-block__title skill-block__title--close">]</h3>
+      </div>
+
+      <div class="skill-block">
+        <h3 class="skill-block__title"><span class="c-key"></span> interests = [</h3>
+        <div class="pill-row">
+          <span class="pill">Mobile Games</span>
+          <span class="pill">Physical Games</span>
+          <span class="pill">Reading</span>
+          <span class="pill">Solving Puzzles</span>
+        </div>
+        <h3 class="skill-block__title skill-block__title--close">]</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <h2 class="section__title">Let's talk</h2>
+
+    <div class="terminal-window">
+      <div class="terminal-window__head">
+        <div class="tabbar__dots" aria-hidden="true">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+        </div>
+        <span class="terminal-window__title">PORTFOLIO</span>
+      </div>
+      <div class="terminal-window__body">
+        <p><span class="prompt-user"></span><span class="prompt-sep"></span><span class="prompt-path"></span><span class="prompt-sep"></span> contact --list</p>
+        <p class="terminal-output">→ email&nbsp;&nbsp;&nbsp;<a href="mailto:renmataneo@gmail.com">renmataneo@gmail.com</a></p>
+        <p class="terminal-output">→ phone&nbsp;&nbsp;&nbsp;<a href="tel:+639924626468">+63 992 462 6468</a></p>
+        <p class="terminal-output">→ github&nbsp;&nbsp;<a href="https://github.com/renmaaa" target="_blank" rel="noopener">github.com/renmaaa</a></p>
+        <p class="terminal-output">→ linkedin&nbsp;<a href="https://linkedin.com/in/renma-taneo" target="_blank" rel="noopener">linkedin.com/in/renma-taneo</a></p>
+        <p class="terminal-output">→ location&nbsp;Maragondon, Cavite, Philippines, 4112</p><span class="cursor">&#8203;</span></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Renma Joy A. Taneo. Built with HTML &amp; CSS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
